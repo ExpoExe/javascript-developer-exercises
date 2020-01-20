@@ -13,6 +13,22 @@ function paintMixer(color1, color2) {
   */
   // PLACE YOUR CODE BELOW
 
+  if(color1 === color2){
+    console.log('The colors match. They mix and make ' + color1);
+  } else if ((color1 == "blue" || color2 == "blue") && (color1 == "red" || color2 == "red")){
+    return 'purple';
+  } else if ((color1 == "red" || color2 == "red") && (color1 == "green" || color2 == "green")){
+    return 'brown';
+  } else if ((color1 == "red" || color2 == "red") && (color1 == "yellow" || color2 == "yellow")){
+    return 'orange';
+  } else if ((color1 == "green" || color2 == "green") && (color1 == "red" || color2 == "red")){
+    return 'brown';
+  } else if ((color1 == "blue" || color2 == "blue") && (color1 == "yellow" || color2 == "yellow")){
+    return 'green';
+  } else {
+    return 'unknown';
+  }
+
   // PLACE YOUR CODE ABOVE
 }
 

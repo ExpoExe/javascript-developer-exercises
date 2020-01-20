@@ -22,6 +22,10 @@ before the next comment block.
 */
 // PLACE YOUR CODE BELOW
 
+wordList = '';
+wordList = words.map( word => wordList.concat('', word.substring(1,3)));
+wordList = wordList.join(', ');
+
 // PLACE YOUR CODE ABOVE
 /*
 When run with "node 2_extracting_words.js" you should see the following on

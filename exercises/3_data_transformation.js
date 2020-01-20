@@ -69,6 +69,8 @@ function convertRideshareArray(array) {
     */
     // PLACE YOUR CODE BELOW
 
+    return {'rideShareId': element.id, 'numberMembers': element.members.length};
+    
     // PLACE YOUR CODE ABOVE
   })
 

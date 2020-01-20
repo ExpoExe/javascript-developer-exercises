@@ -10,6 +10,9 @@ let statement = 'Penn Mutual sells life insurance'
 function reverseLetters(str) {
   // PLACE YOUR CODE BELOW
 
+  var words = statement.split(' ');
+  var reversed = words.map(word => word.split('').reverse().join(''));
+  return reversed.join(' ');
 
   // PLACE YOUR CODE ABOVE
 }
